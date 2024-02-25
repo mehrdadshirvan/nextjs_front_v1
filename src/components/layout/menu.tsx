@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import {useState} from "react";
 
 const NavLink = [
     {title:"Home",href:"/"},
@@ -13,6 +14,7 @@ const NavLink = [
 ]
 export default function Menu(){
     const pathname = usePathname();
+    const [input,setInput] = useState('')
     return (
         <>
             <nav className="bg-gray-800">
@@ -36,6 +38,9 @@ export default function Menu(){
                                             )
                                         })
                                     }
+                                </div>
+                                <div>
+                                    <input type="text" value={input} onChange={e=>setInput(e.target.value)} name="s" id="s"/>
                                 </div>
                             </div>
                         </div>
