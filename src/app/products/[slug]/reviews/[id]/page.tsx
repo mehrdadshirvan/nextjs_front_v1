@@ -1,3 +1,5 @@
+import {notFound} from "next/navigation";
+
 export default function ReviewSinglePage(
     {
         params
@@ -8,6 +10,9 @@ export default function ReviewSinglePage(
         }
     }){
 
+    if(parseInt(params.id) > 100){
+        notFound();
+    }
     return (
         <>
             <h1>Product {params.slug} Review {params.id}</h1>
