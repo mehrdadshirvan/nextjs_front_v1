@@ -10,6 +10,9 @@ export default function ReviewSinglePage(
         }
     }){
 
+    if(parseInt(params.id) > 1000){
+        throw new Error("error 1000");
+    }
     if(parseInt(params.id) > 100){
         notFound();
     }
