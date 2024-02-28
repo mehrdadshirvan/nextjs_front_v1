@@ -1,5 +1,5 @@
 {
-  "name": "rosena_front-v1",
+  "name": "persamart_nextjs_front_v1",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -15,7 +15,8 @@
     "nextjs-toploader": "^1.6.6",
     "react": "^18",
     "react-dom": "^18",
-    "react-query": "^3.39.3"
+    "react-query": "^3.39.3",
+    "swiper": "^11.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",
