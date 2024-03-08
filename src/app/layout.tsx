@@ -28,18 +28,17 @@ export default function RootLayout({
 }) {
     return (
         <QueryClientProvider client={queryClient}>
-        <html lang="en">
-        <body>
-        <header><Menu/></header>
-        <main>
-            <section className="flex min-h-screen flex-col items-center justify-between p-24">
-                <div className=" w-full items-center justify-between font-mono text-sm lg:flex">
-                    {children}
-                </div>
-            </section>
-        </main>
-        </body>
-        </html>
+            <html lang="en">
+            <body>
+            <header><Menu/></header>
+            <main >
+                {children}
+            </main>
+            </body>
+            </html>
         </QueryClientProvider>
     )
 }
+
+// <section className="flex min-h-screen flex-col items-center justify-between p-24">
+//     <div className=" w-full items-center justify-between font-mono text-sm lg:flex">

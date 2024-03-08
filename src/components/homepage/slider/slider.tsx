@@ -23,7 +23,7 @@ const Slider = () =>{
     )
 }
 
-function SliderItem(item){
+function SliderItem(item:any){
     return(
         <SwiperSlide>
             <img src={item.image_url} alt={item.name}/>
